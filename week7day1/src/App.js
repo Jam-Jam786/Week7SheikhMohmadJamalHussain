@@ -1,15 +1,20 @@
 // import { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import ColourButton from './ColourButton.js';
 
 function App() {
 
-const ColourList = ["red", "blue", "green"]
+const [Colours, setColours] = useState(["red", "blue", "green"])
 
   return (
     <div className="App">
       <header className="App-header">
-        <ColourButton colour = {ColourList.map}></ColourButton>
+        {Colours.map((col) => {
+          return(
+            <ColourButton colour = {col}/>    
+          );
+        })}
       </header>
     </div>
   );
