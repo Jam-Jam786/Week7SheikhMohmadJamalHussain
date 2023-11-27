@@ -19,7 +19,7 @@ const [Background, setBackground] = useState ("Yellow")
         {Colours.map((col) => {
           return(
 // THEN ADDED A VARIABLE TO ACTION THAT IS THE BACKGROUND 
-            <ColourButton colour = {col} action = {setBackground}/>    
+            <ColourButton colour = {col} SetBackground = {setBackground}/>    
           );
         })}
       </header>
