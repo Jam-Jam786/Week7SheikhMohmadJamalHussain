@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import'./ColourButton.css'
+import App from './App';
 
 
 
@@ -10,7 +11,7 @@ function ColourButton(props){
 // console.log(props)
 
     return(
-        <div className='ColourButton-container' style={{backgroundColor : Col}}>
+        <div className='ColourButton-container' style={{backgroundColor : Col}} onClick={() => {props.action(Col)}}>
         Hello World
         </div>
     );

@@ -5,14 +5,17 @@ import ColourButton from './ColourButton.js';
 
 function App() {
 
+
 const [Colours, setColours] = useState(["red", "blue", "green"])
+const [Background, setBackground] = useState ("Yellow")
+
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header" style={{backgroundColor : Background}}>
         {Colours.map((col) => {
           return(
-            <ColourButton colour = {col}/>    
+            <ColourButton colour = {col} action = {setBackground}/>    
           );
         })}
       </header>
