@@ -11,6 +11,7 @@ function ColourButton(props){
 // console.log(props)
 
     return(
+// ONCLICK ACTION WOULD CHANGE THE ACTION VARIABLE TO COLOUR OF THE BUTTON THAT YOU PRESS ON.
         <div className='ColourButton-container' style={{backgroundColor : Col}} onClick={() => {props.action(Col)}}>
         Hello World
         </div>
