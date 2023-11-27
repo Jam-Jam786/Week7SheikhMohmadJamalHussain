@@ -1,11 +1,16 @@
+import { useState } from 'react';
 import './InteractiveGlossary.css'
 
 
-function Button(){
-    return(
-        <div className='Buttons'>
-            
-        </div>
+function Button() {
+
+    // const [buttons, setButtons] = useState();
+
+
+    return (
+        <button className='Button'>Button</button>
+
+
     );
 }
 
