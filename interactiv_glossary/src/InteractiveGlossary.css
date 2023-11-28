@@ -3,8 +3,8 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    /* flex-direction: row; */
+    /* justify-content: center; */
     align-items: center;
 
 }
@@ -12,20 +12,45 @@
 .answer-container {
     background-color: peachpuff;
     height: 90vh;
-    width: 40vw;
+    width: 70vw;
     border-radius: 16px;
     display: flex;
     justify-self: center;
     align-items: center;
-
+    margin: 16px;
 
 }
 
 .button-container {
-    background-color: blue;
-    height: 100vh;
-    width: 30vw;
+    background-color: red;
+    height: 90%;
+    width: 25vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.buttons-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button{
+    height: 10vh;
+    width: 10vh;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    border: solid;
+}
+
+.Button:hover{
+
+}
+
+

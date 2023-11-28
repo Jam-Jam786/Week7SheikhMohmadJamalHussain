@@ -8,7 +8,7 @@ import Buttons from './InteractiveGlossary.jsx'
 function App() {
 
 
-    const [array, setArray] = useState[
+    const [concepts, setConcepts] = useState([
     {
       title: "String",
       Description: "A string is a data type used in programming, that is used to represent text rather than numbers."
@@ -33,7 +33,7 @@ function App() {
       title: "Const",
       Description: "declares block-scoped local variables. The value of a constant can't be changed through reassignment using the assignment operator"
      }
-     ];
+     ]);
 
 
 
@@ -55,12 +55,12 @@ function App() {
           <div className='button-container'>
             <div className='buttons-column'>
 
-              {/* {array.map((dataBase) => {
+              {concepts.map((dataBase) => {
                 return(
-                  <Button title = {dataBase.title} />
+                <Buttons title = {dataBase.title}/>
                 );
-              })} */}
-              <Buttons></Buttons>
+              })}
+              
             </div>
           </div>
 
