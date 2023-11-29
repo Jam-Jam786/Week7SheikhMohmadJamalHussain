@@ -7,7 +7,12 @@ function Buttons(props) {
 
     // const [buttons, setButtons] = useState();
     return (
-        <button className='Button' onClick={props.action} > {props.title} </button>
+        <button style = {{backgroundColor: props.complete ? "red":"yellow"}} className='Button' onClick={props.action}>
+
+        {props.title}
+
+        </button>
+
     );
 }
 
